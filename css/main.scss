@@ -69,6 +69,12 @@ h4 {
       }
       .portrait {
         margin-bottom: 20px;
+        &:hover,
+        .active {
+          -webkit-transform: translateY(-5px); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+          -ms-transform: translateY(-5px); /* IE 9 */
+              transform: translateY(-5px); /* IE 10, Fx 16+, Op 12.1+ */
+        }
       }
       .circle {
         border-radius: 100px;
@@ -91,12 +97,7 @@ h4 {
           // padding: 15px;
           position: relative;
           height: 50px;
-          &:hover,
-          .active {
-            -webkit-transform: translateX(2px); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
-            -ms-transform: translateX(2px); /* IE 9 */
-                transform: translateX(2px); /* IE 10, Fx 16+, Op 12.1+ */
-          }
+
           a {
             padding: 15px;
             position: absolute;
@@ -104,7 +105,13 @@ h4 {
             width: 100%;
             top: 0;
             left: 0;
-
+            background-color: #222;
+            &:hover,
+            .active {
+              -webkit-transform: translateX(40px); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+              -ms-transform: translateX(40px); /* IE 9 */
+                  transform: translateX(40px); /* IE 10, Fx 16+, Op 12.1+ */
+            }
           }
         }
       }
