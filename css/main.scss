@@ -5,6 +5,12 @@ html,
 body {
   min-height: 100%;
 }
+body {
+ background-color: #f5f5f5;
+ font-size: 1em;
+ color: #222;
+ // text-shadow: 2px 2px #222;
+}
 h1,
 h2,
 h3,
@@ -18,12 +24,23 @@ img {
   margin: 0;
   padding: 0;
 }
-body {
- background-color: #f5f5f5;
- font-size: 1em;
- color: #222;
- // text-shadow: 2px 2px #222;
+a {
+  color: #fff;
+  &:hover {
+    text-decoration: none;
+    color: inherit;
+  }
 }
+h1 {
+  font-size: 28px;
+}
+h2 {
+  font-size: 22px;
+}
+h4 {
+  font-size: 20px;
+}
+
 @media(max-width: 767px){
   .navbar {
     margin-bottom: 0;
@@ -37,12 +54,14 @@ body {
     color: #f5f5f5;
   }
   .aside {
+    position: fixed;
     padding-left: 0;
     padding-right: 0;
-    height: 900px;
+    height: 778px;
     background-color: #222;
     color: #fff;
     text-align: center;
+
     .about {
       .brand-name {
         padding-top: 20px;
@@ -56,16 +75,48 @@ body {
         border: 1px solid #222;
       }
       .current-info {
-        padding-left: 15px;
-        padding-right: 15px;
-        text-align: left;
-        .occupation-txt {
-          // white-space: now   rap;
+        padding: 20px 15px;
+        text-align: right;
+      }
+    }
+    .sidebar-nav {
+      padding: 0 0 20px;
+      .sidebar-list {
+        list-style-type: none;
+        text-align: right;
+        font-size: 16px;
+        padding-left: 0px;
+        .sidebar-item {
+          border-bottom: 1px solid #f5f5f5;
+          // padding: 15px;
+          position: relative;
+          height: 50px;
+          &:hover,
+          .active {
+            -webkit-transform: translateX(2px); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+            -ms-transform: translateX(2px); /* IE 9 */
+                transform: translateX(2px); /* IE 10, Fx 16+, Op 12.1+ */
+          }
+          a {
+            padding: 15px;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+
+          }
         }
       }
+    }
 
+    .contact-info {
 
-
+    }
+    .copyright {
+      position: absolute;
+      width: 100%;
+      bottom: 0;
     }
 
   }
