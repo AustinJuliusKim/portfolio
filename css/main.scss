@@ -20,9 +20,14 @@ h6,
 p,
 a,
 hr,
-img {
+img,
+ul,
+li {
   margin: 0;
   padding: 0;
+}
+ul {
+  list-style-type: none;
 }
 a {
   color: #fff;
@@ -54,7 +59,7 @@ h4 {
     color: #f5f5f5;
   }
   .aside {
-    position: fixed;
+    position: static;
     padding-left: 0;
     padding-right: 0;
     height: 778px;
@@ -106,30 +111,48 @@ h4 {
             top: 0;
             left: 0;
             background-color: #222;
+            z-index: 10;
             &:hover,
             .active {
-              -webkit-transform: translateX(40px); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
-              -ms-transform: translateX(40px); /* IE 9 */
-                  transform: translateX(40px); /* IE 10, Fx 16+, Op 12.1+ */
+              -webkit-transform: translateX(20px); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+              -ms-transform: translateX(20px); /* IE 9 */
+                  transform: translateX(20px); /* IE 10, Fx 16+, Op 12.1+ */
             }
           }
         }
       }
     }
-
-    .contact-info {
-
-    }
-    .copyright {
-      position: absolute;
-      width: 100%;
-      bottom: 0;
-    }
-
   }
+  // End Aside
 
   .main-content {
+    padding: 0px 0;
     background-color: #f5f5f5;
     color: #000;
+    .panel {
+      border-radius: 0px;
+      margin: 0 0 40px 0;
+      .panel-heading {
+        background-color: #fff;
+        letter-spacing: 10px;
+        border-bottom: 2px solid #222;
+        border-top: 2px solid #222;
+        border-radius: 0;
+        box-shadow: 2px 2px 10px #f5f5f5;
+        .panel-title {
+          padding: 20px 0;
+          font-size: 32px;
+          a {
+            text-decoration: none;
+          }
+        }
+      }
+      .panel-collapse {
+        font-size: 12px;
+      }
+    }
+    // End panel
+
   }
+
 }

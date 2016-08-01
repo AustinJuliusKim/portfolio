@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>Austin Julius Kim</title>
+  <link rel="icon"
+      type="image/png"
+      href="favicon.png">
   <!-- Stylesheets -->
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
@@ -43,7 +46,7 @@
   <!-- End Navbar -->
   <div class="container-fluid app">
     <!-- Aside -->
-    <section class="col-md-3 aside hidden-xs">
+    <aside class="col-md-3 aside hidden-xs">
       <!-- About -->
       <article class="about">
         <h1 class="brand-name">Austin Julius Kim</h1>
@@ -86,11 +89,103 @@
       <section class="copyright">
         <p>&copy; 2016 Developed By Austin Julius Kim</p>
       </section>
-    </section>
+    </aside>
     <!-- End Aside -->
+
     <div class="col-md-9 main-content">
-      <div class="row">
+      <div class="panel-group" id="accordion">
+        <div class="panel panel-default">
+          <!-- Panel Heading -->
+          <div class="panel-heading" role="tab" id="testimonial-heading">
+            <h3 class="panel-title heading">
+              <a href="#collapse-one" data-toggle="collapse" data-parent="#accordion"
+              aria-expanded="true"
+              aria-controls="collapse-one">TESTIMONIAL</a>
+            </h3>
+          </div>
+          <!-- End Panel Heading -->
+          <div class="panel-collapse collapse in"
+          id="collapse-one" role="tabpanel" aria-labelledby="testimonial-heading">
+            <div class="panel-body">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel panel-default">
+          <!-- Panel Heading -->
+          <div class="panel-heading" role="tab" id="wid-heading">
+            <h3 class="panel-title heading">
+              <a href="#collapse-two" data-toggle="collapse" data-parent="#accordion"
+              aria-expanded="false"
+              aria-controls="collapse-two">WHAT I'M DOING</a>
+            </h3>
+          </div>
+          <!-- End Panel Heading -->
+          <div class="panel-collapse collapse"
+          id="collapse-two" role="tabpanel" aria-labelledby="wid-heading">
+            <div class="panel-body">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="panel panel-default">
+          <!-- Panel Heading -->
+          <div class="panel-heading" role="tab" id="exp-heading">
+            <h3 class="panel-title heading">
+              <a href="#collapse-three" data-toggle="collapse" data-parent="#accordion"
+              aria-expanded="false"
+              aria-controls="collapse-three">EXPERIENCE</a>
+            </h3>
+          </div>
+          <!-- End Panel Heading -->
+          <div class="panel-collapse collapse"
+          id="collapse-three" role="tabpanel" aria-labelledby="exp-heading">
+            <div class="panel-body">
+              <h3>Front End Web Developer @ Loot Crate</h3>
+              <h4>Los Angeles, CA</h4>
+              <ul>
+                <li>Utilizes HTML5, CSS3, Bootstrap, jQuery, CoffeeScript, Jasmine and Ruby on Rails to develop and iterate on web pages for an e-commerce company that raked in $100+ million in revenue for 2014</li>
+                <li>Collaborates with cross function team members to launch new products and lead development of pages including marketing page, checkout process and HTML email  templates</li>
+                <li>Advocates responsive web design principles to increase site maintainability and improve mobile and desktop page speed load times</li>
+                <li>Takes comps from design and creates responsive web pages while providing critical feedback to visual designers on how Users should interact with elements on the page</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel panel-default">
+          <!-- Panel Heading -->
+          <div class="panel-heading" role="tab" id="edu-heading">
+            <h3 class="panel-title heading">
+              <a href="#collapse-four" data-toggle="collapse" data-parent="#accordion"
+              aria-expanded="false"
+              aria-controls="collapse-four">EDUCATION</a>
+            </h3>
+          </div>
+          <!-- End Panel Heading -->
+          <div class="panel-collapse collapse"
+          id="collapse-four" role="tabpanel" aria-labelledby="edu-heading">
+            <div class="panel-body">
+              <article class="most-recent">
+                <h3>General Assembly, Feb - June 2015 | Web Development Immersive </h3>
+              </article>
+              <article class="less-recent">
+                <h3>University of California Irvine, Aug 2008- Dec 2012 | Bachelor of Arts Economics</h3>
+              </article>
+            </div>
+          </div>
+        </div>
+
       </div>
+
+
     </div>
   </div>
 </body>
